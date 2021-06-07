@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.pattern-mobile,
+.woman-mobile {
+  display: none;
+}
+
+.container {
+  width: 1200px;
+  height: 500px;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.left {
+  width: 500px;
+}
+
+.pattern {
+  width: 700px;
+  height: 700px;
+  position: relative;
+  bottom: 125px;
+  right: 225px;
+  overflow: visible;
+}
+
+.woman {
+  width: 550px;
+  height: 450px;
+  position: relative;
+  bottom: 700px;
+  right: 75px;
+}
+
+.img-box {
+  z-index: 1;
+  position: absolute;
+  bottom: 240px;
+  left: 70px;
+}
+
+h1 {
+  width: 350px;
+  color: hsl(237, 12%, 33%);
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+p {
+  color: hsl(240, 6%, 50%);
+  width: 500px;
+  display: none;
+  font-size: 1.2rem;
+}
+
+.right {
+  width: 700px;
+  padding: 70px;
+}
+
+.faq {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.faq:hover {
+  pointer-events: none;
+  color: unset;
+}
+
+button {
+  position: relative;
+  top: 17px;
+  left: 500px;
+  background-color: white;
+  border: none;
+  transition: 0.5s ease-in-out;
+}
+
+hr {
+  width: 525px;
+  height: 1px;
+  border: none;
+  background-color: hsl(240, 5%, 91%);
+}
+
+.arrow {
+  transition: 0.5s ease-in-out;
+  transform: rotate(180deg);
+}
+
+.h1-change {
+  font-weight: bold;
+  color: hsl(238, 29%, 16%);
+}
+
+h1:hover {
+  color: hsl(14, 88%, 65%);
+}
+h1:hover,
+button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 250px 50px;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 2%;
+  }
+
+  .pattern,
+  .woman,
+  .img-box {
+    display: none;
+  }
+
+  .pattern-mobile {
+    width: 400px;
+    height: 200px;
+    display: block;
+    margin: auto;
+  }
+
+  .woman-mobile {
+    display: block;
+    position: absolute;
+    bottom: 730px;
+    left: 50px;
+    width: 450px;
+  }
+  .right {
+    position: relative;
+    bottom: 10px;
+    padding: 40px;
+  }
+  h1 {
+    padding-top: 10px;
+    font-size: 2rem;
+    width: 400px;
+  }
+
+  .faq {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  p {
+    display: none;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    width: 400px;
+  }
+
+  hr {
+    width: 425px;
+  }
+
+  button {
+    position: relative;
+    left: 400px;
+  }
+
+  h1:hover {
+    color: unset;
+  }
+} ;
